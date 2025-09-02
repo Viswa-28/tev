@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 
     <!-- cdn end -->
@@ -22,31 +23,33 @@
 
     <header>
         <nav class="navbar navbar-expand-lg position-sticky">
-  <div class="container">
-    <a class="navbar-brand" href="#"><img src="./images/logo.png" class="logo" alt="logo-img"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-      <ul class="navbar-nav gap-5 mb-2 text-center text-lg-start mb-lg-0 ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Clients</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        
-      </ul>
-     
-    </div>
-  </div>
-</nav>
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./images/logo.png" class="logo" alt="logo-img"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav gap-5 mb-2 text-center text-lg-start mb-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
     </header>
 
 
@@ -56,10 +59,11 @@
             <div class="row d-flex align-items-center justify-content-center  p-3">
                 <div class="col banner-content gap-lg-5 gap-3">
                     <h1 class="fs-70 text-center">
-                        Transforming workforce management with TEV HR SOLUTIONS
+                        Transforming workforce management with <span class="highlight">TEV HR SOLUTIONS</span>
                     </h1>
                     <p class="fs-24 text-center">
-                        Smart, scalable, and people-focused HR services that empower businesses to build stronger teams and achieve sustainable growth
+                        Smart, scalable, and people-focused HR services that empower businesses to build stronger teams
+                        and achieve sustainable growth
                     </p>
                     <div class="primary-btn">
                         Explore Clients
@@ -69,6 +73,46 @@
 
         </section>
 
+        <section class="solution" data-aos="fade-up">
+            <h1 class="fs-36 text-center">Comprehensive HR Solutions Tailored for You</h1>
+            <p class="text-center fs-24">Smart, Sustainable, and Seamless Electric Mobility Across Tamil Nadu</p>
+
+            <div class="row gap-3 solution-content">
+                <div data-aos="flip-left"
+                    class="col-2 solution-card  p-5 d-flex flex-column align-items-center justify-content-center">
+                    <img src="./images/second-1.png" alt="">
+                    <h3 class="text-center">Talent Acquisition</h3>
+                    <p class="text-center solution-text">Find the right candidates faster with data driven recruitment.
+                    </p>
+                </div>
+
+                <div data-aos="flip-left"
+                    class="col-2 solution-card  p-5 d-flex flex-column align-items-center justify-content-center">
+                    <img src="./images/second-2.png" alt="">
+                    <h3 class="text-center w-100">Employee Engagement</h3>
+                    <p class="text-center solution-text w-100">Hassle free salary management and legal compliance.</p>
+                </div>
+                <div data-aos="flip-left"
+                    class="col-2 solution-card  p-5 d-flex flex-column align-items-center justify-content-center">
+                    <img src="./images/second-3.png" alt="">
+                    <h3 class="text-center w-100 ">Employee Engagement</h3>
+                    <p class="text-center w-100  solution-text">Improve retention with culture-focused HR strategies..
+                    </p>
+                </div>
+                <div data-aos="flip-left"
+                    class="col-2 solution-card  p-5 d-flex flex-column align-items-center justify-content-center">
+                    <img src="./images/second-4.png" alt="">
+                    <h3 class="text-center w-100 ">Employee Engagement</h3>
+                    <p class="text-center w-100 solution-text">Upskill your workforce with tailored programs,
+                        everyone.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="numbers">
+            
+        </section>
 
 
     </main>
@@ -89,12 +133,14 @@
 
 
 
-
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
