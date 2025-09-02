@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Counter</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #18181b;
+      color: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .counter-box {
+      text-align: center;
+    }
+    .counter {
+      font-size: 60px;
+      font-weight: bold;
+      color: #7C3AED; /* your violet brand color */
+    }
+    .label {
+      font-size: 20px;
+      margin-top: 10px;
+      color: #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+  <div class="counter-box">
+    <div class="counter" data-target="1250">0</div>
+    <div class="label">Happy Customers</div>
+  </div>
+
+  <script>
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      counter.innerText = '0';
+
+      const updateCounter = () => {
+        const target = +counter.getAttribute('data-target');
+        const current = +counter.innerText;
+        const increment = target / 200; // speed
+
+        if (current < target) {
+          counter.innerText = `${Math.ceil(current + increment)}`;
+          setTimeout(updateCounter, 10);
+        } else {
+          counter.innerText = target.toLocaleString(); // formatted with commas
+        }
+      };
+
+      updateCounter();
+    });
+  </script>
+</body>
+</html>
