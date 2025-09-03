@@ -36,3 +36,26 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(counter);
     });
 });
+
+
+
+// swipper
+
+  const partnerSwiper = new Swiper('.partner-swiper', {
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 0,              // No delay between slides
+      disableOnInteraction: false
+      
+    },
+    speed: 2000,             // Adjust speed of scrolling
+    grabCursor: true,
+    breakpoints: {
+      320: { slidesPerView: 2 },
+      576: { slidesPerView: 3 },
+      768: { slidesPerView: 4 },
+      992: { slidesPerView: 5 }
+    }
+  });
